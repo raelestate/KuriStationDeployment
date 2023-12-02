@@ -1,0 +1,653 @@
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .breadcrumb{
+        font-size: 10px;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* banner displayed only for desktops */
+    #banner { display: block; }
+}
+/*Fonts - Rubik*/
+@font-face {
+    font-family: "Rubik-bold";
+    font-style: normal;
+    src: url(../static2/source/fonts/Rubik/Rubik-Black.ttf)
+}
+@font-face{
+    font-family: "Rubik-thin";
+    font-style: normal;
+    src: url(../static2/source/fonts/Rubik/Rubik-Light.ttf)
+}
+@font-face{
+    font-family: "Rubik-medium";
+    font-style: normal;
+    src: url(../static2/source/fonts/Rubik/Rubik-Bold.ttf);
+}
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    src: url(../static2/source/fonts/Rubik/Rubik-Regular.ttf)
+}
+
+/*Fonts - Epilogue*/
+@font-face {
+    font-family: "Epilogue-bold";
+    font-style: normal;
+    src: url(../source/fonts/Epilogue/Epilogue-Black.ttf);
+}
+@font-face {
+    font-family: "Epilogue-thin";
+    font-style: normal;
+    src: url(../static2/source/fonts/Epilogue/Epilogue-Light.ttf);
+}
+@font-face {
+    font-family: "Epilogue-medium";
+    font-style: normal;
+    src: url(../static2/source/fonts/Epilogue/Epilogue-Bold.ttf);
+}
+@font-face {
+    font-family: "Epilogue";
+    font-style: normal;
+    src: url(../static2/source/fonts/Epilogue/Epilogue-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --kuri-soft-white: #F8F6F5;
+    --kuri-white: #FFFF;
+    --kuri-grey: #F8F6F6;
+    --kuri-green: #53A06E;
+    --kuri-red: #BF0000;
+    --kuri-blue: #002CB9;
+    --kuri-lblue: #659BDF;
+    --kuri-orange: #FE8235;
+    --kuri-pink: #FEF3E7;
+    --kuri-brown: #573926;
+    --kuri-black: #0000;
+    --kuri-fade: #B7B7B7;
+    --kuri-peach: #FEF3E7;
+    --kuri-bg: #FBFBFB;
+    --kuri-fade-orange: rgba(240, 158, 84, 0.47);
+ 
+    --bg-soft-white: #F8F6F5;
+    --bg-white: #FFFF;
+    --bg-grey: #F8F6F6;
+    --bg-green: #53A06E;
+    --bg-red: #BF0000;
+    --bg-blue: #002CB9;
+    --bg-orange: #FE8235;
+    --bg-pink: #FEF3E7;
+    --bg-brown: #573926;
+    --bg-black: #0000;
+    --bg-fade: #B7B7B7;
+    --bg-peach: #FEF3E7;
+    --bg-background: #FBFBFB;
+
+    --check-size: 50px;
+    --check-border-width: 4px;
+    --check-width: calc(var(--check-size)/2);
+    --check-height: calc(var(--check-size)/2);
+    --check-left: calc(var(--check-size)/2);
+    --check-top: 50%;
+    --check-color: var(--kuri-black);
+}
+p{
+    font-family: "Epilogue-thin";
+    margin: 0;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    --sb-track-color: #fdfdfd;
+    --sb-thumb-color: #599e5d;
+    --sb-size: 5px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size) 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 5px;
+    border: 2px solid #6da071;
+    }
+.no-header{
+    margin-top: 0em;
+    margin-bottom: 0em;
+    background-color: var(--kuri-bg);
+}
+body {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    background-color: var(--kuri-white);
+
+}
+.fc-brown-small{
+    font-family: "Rubik", normal;
+    font-size: 11px;
+    color: var(--kuri-brown);
+}
+.message{
+    margin-top: 10em;
+    margin-bottom: 4em;
+}
+
+.icon_badge{
+    position: absolute;
+    top: 1px;
+    right: -1px;
+    width: 22px;
+    height: 22px;
+    background: var(--kuri-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--kuri-white);
+    font-size: 0.8em;
+}
+
+  
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+  }
+  * {
+    font-family: 'Epilogue', ;
+    color: #371B34;
+}
+
+a {
+    color: #371B34;
+}
+
+p {
+    color: #573926;
+    font-weight: 500;
+}
+
+
+
+/*breadcrumbs*/
+
+.breadcrumb{
+    font-size: 15px;
+}
+.breadcrumb >.active {
+    color: black;
+    font-weight: bold;
+ }
+ .breadcrumb a{
+    text-decoration: none;
+ }
+
+ /*buttons*/
+
+.btn-pink{
+    background-color: var(--kuri-pink);
+    color: var(--kuri-brown);
+    font-size: 10px;
+}
+.btn-brown{
+    border: 2px solid var(--kuri-brown);
+    font-weight: 500;
+    color: var(--kuri-brown);
+}
+.btn-orange {
+    background-color: var(--kuri-orange);
+    color: var(--kuri-white);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.btn-blue {
+    background-color: var(--kuri-blue);
+    color: var(--kuri-white);
+    font-weight: 700;
+    font-size: 14px;
+}
+.btn-green-tp{
+    font-family: "Epilogue-thin";
+    background-color: transparent;
+    border: 1px solid var(--kuri-green);
+    color: var(--kuri-green);
+    width: 100%;
+    padding: 0.6em;
+    border-radius: 0.6em;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-success{
+    background-color: var(--kuri-green);
+}
+.btn-green {
+    background-color: var(--kuri-green);
+    color: var(--kuri-white);
+    /*border : 0*/
+    padding: 0.8em;
+    border-radius: 0.6em;
+    font-weight: 700;
+    font-size: 14px;
+}
+.btn-green-icon{
+    background-color: var(--kuri-green);
+    color: var(--kuri-green);
+    border: 0;
+    padding: 0.8em;
+    border-radius: 0.6em;
+    font-weight: 700;
+    font-size: 14px;
+}
+.btn-green-acc {
+    font-family: "Epilogue";
+    background-color: var(--kuri-green);
+    color: var(--kuri-white);
+    width: 100%;
+    border: 0;
+    padding: 0.8em;
+    border-radius: 0.6em;
+    font-weight: 700;
+    font-size: 14px;
+}
+.btn-s{
+    background-color: transparent;
+}
+.btn-red {
+    background-color: var(--kuri-red);
+    color: var(--kuri-white);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.btn-orange {
+    background-color: #FE8235;
+    color: white;
+}
+
+.btn-grey{
+    border: 2px solid #F4F2F1;
+    background-color: #F4F2F1;
+    color: var(--bg-brown);
+}
+
+.btn-white{
+    background-color: var(--bg-soft-white);
+    color: var(--bg-brown);
+    width: 100%;
+    padding: 0;
+}
+
+.btn-soft {
+    background-color: var(--bg-soft-white);
+    color: var(--bg-brown);
+    width: 95%;
+}
+
+.bg-pink{
+    background-color: var(--bg-pink);
+    color: var(--kuri-brown);
+    width: 93%;
+}
+
+.bg-brown{
+    background-color: var(--kuri-brown);
+    color: var(--kuri-bg);
+}
+
+.bg-orange {
+    background-color: var(--kuri-orange);
+    color: white;
+}
+.bg-green{
+    background-color: var(--bg-green);
+    color: white;
+}
+
+.note-peach {
+    background-color: var(--kuri-peach);
+    color: var(--kuri-brown);
+}
+
+/*POST OR LISTING*/
+.post-post{
+    background-color: var(--bg-pink);
+}
+.post-listing{
+    background-color: var(--bg-green);
+}
+
+/*READ and UNREAD*/
+.mes-read{
+    background-color: var(--bg-soft-white);
+    color: var(--kuri-brown);
+    border: 1px solid var(--kuri-grey);
+    width: 100%;
+    padding: 0;
+}
+.mes-unread{
+    background-color: var(--kuri-orange);
+    color: var(--kuri-bg);
+    border: 1px solid var(--kuri-grey);
+    width: 100%;
+    padding: 0;
+}
+.this-brown{
+    color: var(--kuri-brown)
+}
+
+.slot-orange {
+    background-color: var(--kuri-peach);
+    color: var(--kuri-brown);
+    border-radius: 2em;
+}
+
+.search-message {
+    background-color: var(--kuri-grey);
+    border-radius: 2em;
+    height: 100%;
+    width : 100%;
+}
+
+.text-bg-orange {
+    background-color: RGBA(var(--kuri-orange), var(--bs-bg-opacity, 1)) !important;
+}
+
+/*fonts*/
+
+.fc-white {
+    color: var(--kuri-white);
+}
+
+.fc-brown {
+    color: var(--kuri-brown);
+}
+
+.fc-orange {
+    color: var(--kuri-orange);
+}
+
+.fc-fade {
+    color: var(--kuri-fade);
+}
+
+.ff-orange {
+    background-color: var(--kuri-orange);
+}
+
+.fc-green-bold {
+    color: var(--kuri-green);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+
+
+/*Images*/
+
+.circular-image {
+    border: 2px solid #573926;
+    /* Change the border color as needed */
+    border-radius: 50%;
+    /* Make the image circular */
+    width: 45px;
+    /* Set the desired width */
+    height: 45px;
+    /* Set the desired height */
+
+}
+.circular-image-head {
+    border: 4px solid var(--kuri-fade-orange);
+    /* Change the border color as needed */
+    border-radius: 50%;
+    /* Make the image circular */
+    width: 45px;
+    /* Set the desired width */
+    height: 45px;
+    /* Set the desired height */
+}
+.circular-image-medium {
+    border: 2px solid #573926;
+    /* Change the border color as needed */
+    border-radius: 50%;
+    /* Make the image circular */
+    width: 60px;
+    /* Set the desired width */
+    height: 60px;
+    /* Set the desired height */
+}
+.small-image{
+    border-radius: 50%;
+    /* Make the image circular */
+    width: 30px;
+    /* Set the desired width */
+    height: 30px;
+    /* Set the desired height */
+}
+.small-icon{
+    width: 70px;
+    height: 70px;
+}
+
+.fav {
+    border-radius: 10px;
+    border: 1px solid #F4F4F4;
+    background: var(--kuri-grey);
+}
+
+.square-image {
+    width: 90px;
+    height: 90px;
+}
+
+.notif-card-white {
+    background-color: var(--kuri-white);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.categories{
+    margin: 0px 10px 10px;
+}
+
+.name{
+    color: var(--kuri-brown);
+    font-size: 15px;
+    font-weight: 600;
+    width: 15em;
+}
+.name-unread{
+    color: var(--kuri-bg);
+    font-size: 15px;
+    font-weight: 600;
+    width: 15em;
+}
+
+.status{
+    color: var(--kuri-brown);
+    font-size: 12px;
+    font-weight: 200;
+    /*Ellipsis for overflowing 1 liner inbox*/
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.status-unread{
+    color: var(--kuri-bg);
+    font-size: 12px;
+    font-weight: 200;
+    /*Ellipsis for overflowing 1 liner inbox*/
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.search-message{
+    color: #573926;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+}
+
+.transparent{
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.pass{
+    max-width: 80%;
+}
+
+.pass-people{
+    max-width:75%;
+}
+input{
+    background-color: var(--bg-white);
+    color: var(--bg-brown);
+    outline: none;
+    width: 100%;
+    border: none;
+}
+input[type="password"]{
+    background-color: var(--bg-white);
+    color: var(--bg-brown);
+    outline: none;
+    width: 80%;
+    border: none;
+}
+
+.input-group{
+    min-width: 15rem;
+    width: 100%;
+}
+
+.form-control{
+    width: 100%;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.span-btn{
+    cursor: pointer;
+    border: 0;
+    background-color: var(--bg-white);
+}
+
+i.bi {
+    font-size: 25px;
+}
+
+.collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.collapse.show {
+    max-height: 1000px; /* Adjust this value according to your content */
+}
+
+.gcash{
+    border: 2px solid var(--kuri-blue);
+    padding: 0;
+}
+
+.search .input-group {
+    width: 90%;
+}
+
+.file-upload{
+    padding: 8px 8px 8px 16px;
+    width: 85%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.custom-file-label {
+    min-width: 205px; /* Set a maximum width for the file label */
+    max-width: 205px;
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; /* Show an ellipsis (...) when text overflows */
+}
+
+
+.btn-copy{
+    font-family: "Rubik";
+    background-color: var(--kuri-lblue);
+    border-radius: 10px;
+    color: var(--kuri-white);
+    border: none;
+    font-size: 12px;
+}
+
+.fc-brown-bold{
+    font-family: "Rubik-medium";
+    color: var(--kuri-brown);
+    font-size: 17px;
+}
+
+/*ANIMATION NIIII*/
+@keyframes depleteBorder {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+#info-notif {
+    position: relative;
+    overflow: hidden;
+}
+#info-notif::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Set the desired border height */
+    background-color: var(--kuri-lblue); /* Set the color of the border */
+    animation: depleteBorder 5s linear forwards;
+}
+
+
+#info.closed {
+    display: none;
+}
